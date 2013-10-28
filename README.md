@@ -1,4 +1,6 @@
 fuel-mailchimp
 ==============
 
-We needed mailchimp for twittstrap.com, so i haved decided to created and shared.
+We needed mailchimp for twittstrap.com, so i haved decided to create this fuel package and shared it on github.
+The project will be based on ...
+Star my other project twittstrap.
