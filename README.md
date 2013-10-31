@@ -1,5 +1,6 @@
 fuel-mailchimp
 ==============
+The package is still under testing, so check back later.
 Overview
 =============================================
 We needed mailchimp for twittstrap.com, so i have decided to create this fuel package and share it on github.
