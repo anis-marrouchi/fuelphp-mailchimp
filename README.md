@@ -10,12 +10,13 @@ Installing the package
 ==================================
 **The fuel way**
 
-- run php oil package install fuelphp-mailchimp (you will need to add my git to your sources in your package cofiguration file: make a copy of the package configuration file located @ `\home\fuelphp\fuel\core\config\package.php` into your `\home\fuelphp\fuel\app\config\package.php`, then add github.com/anis-marrouchi to sources )
+- run php oil package install fuelphp-mailchimp (you will need to add my git to your sources in your package cofiguration file: make a copy of the package configuration file located @ `\home\fuelphp\fuel\core\config\package.php` into your `\home\fuelphp\fuel\app\config\package.php`, then add `github.com/anis-marrouchi` to sources
+- Rename fuelphp-mailchimp folder located @ `fuel/packages/` to mailchimp 
 
 **The github way**
 
 1. Clone (`git clone git://github.com/anis-marrouchi/fuelphp-mailchimp`) / [download](https://github.com/anis-marrouchi/fuelphp-mailchimp/archive/master.zip)
-2. Rename folder to mailchimp and place in fuel/packages/
+2. Rename folder to mailchimp and place in `fuel/packages/`
 
 Cofiguration
 ==================================
