@@ -9,7 +9,7 @@
  */
 
 // Add namespace, necessary if you want the autoloader to be able to find classes
-Autoloader::add_namespace('Mailchimp', __DIR__.'/classes/');
+Autoloader::add_namespace('Mailchimp', __DIR__);
 
 // Add as core namespace
 Autoloader::add_core_namespace('Mailchimp');
@@ -23,8 +23,11 @@ Autoloader::add_core_namespace('Mailchimp', true);
 // - optimization: no path searching is necessary
 // - it's required to be able to use as a core namespace
 // - if you want to break the autoloader's path search rules
+
+
 Autoloader::add_classes(array(
-    'Mailchimp\\Mailchimp' => __DIR__.'/Mailchimp.php',
+    'Mailchimp\\Mailchimp' => 		__DIR__.'/classes/mailchimp.php',
+	'Mailchimp\\Mailchimp_Error' => __DIR__.'/classes/Mailchimp/Exceptions.php',
 ));
 
 

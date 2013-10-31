@@ -1,5 +1,5 @@
 <?php
-
+namespace Mailchimp;
 class Mailchimp_Gallery {
     public function __construct(Mailchimp $master) {
         $this->master = $master;

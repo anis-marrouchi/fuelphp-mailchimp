@@ -1,6 +1,6 @@
 <?php
-
-class Mailchimp_Neapolitan {
+namespace Mailchimp;
+class Mailchimp_Mobile {
     public function __construct(Mailchimp $master) {
         $this->master = $master;
     }

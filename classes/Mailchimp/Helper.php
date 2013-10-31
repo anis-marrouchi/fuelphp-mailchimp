@@ -1,5 +1,5 @@
 <?php
-
+namespace Mailchimp;
 class Mailchimp_Helper {
     public function __construct(Mailchimp $master) {
         $this->master = $master;

@@ -1,18 +1,17 @@
 <?php
-
-require_once 'classes/Folders.php';
-require_once 'classes/Templates.php';
-require_once 'classes/Users.php';
-require_once 'classes/Helper.php';
-require_once 'classes/Mobile.php';
-require_once 'classes/Ecomm.php';
-require_once 'classes/Neapolitan.php';
-require_once 'classes/Lists.php';
-require_once 'classes/Campaigns.php';
-require_once 'classes/Vip.php';
-require_once 'classes/Reports.php';
-require_once 'classes/Gallery.php';
-require_once 'classes/Exceptions.php';
+namespace Mailchimp;
+require_once 'Mailchimp/Folders.php';
+require_once 'Mailchimp/Templates.php';
+require_once 'Mailchimp/Users.php';
+require_once 'Mailchimp/Helper.php';
+require_once 'Mailchimp/Mobile.php';
+require_once 'Mailchimp/Ecomm.php';
+require_once 'Mailchimp/Neapolitan.php';
+require_once 'Mailchimp/Lists.php';
+require_once 'Mailchimp/Campaigns.php';
+require_once 'Mailchimp/Vip.php';
+require_once 'Mailchimp/Reports.php';
+require_once 'Mailchimp/Gallery.php';
 
 class Mailchimp {
 
@@ -221,10 +220,11 @@ class Mailchimp {
     );
 
     public function __construct($apikey=null, $opts=array()) {
-		//Original code
+        //Original code
         /*if(!$apikey) $apikey = getenv('MAILCHIMP_APIKEY');*/
-		//Anis Marrouchi v 1.0: Modified to fuelphp specifics 
-		if(!$apikey) $apikey = \Config::get('api_key');
+		//Anis Marrouchi v 1.0: Modified to fuelphp specifics
+		\Config::load('mailchimp', true);
+		if(!$apikey) $apikey = \Config::get('mailchimp.api_key');
         if(!$apikey) $apikey = $this->readConfigs();
         if(!$apikey) throw new Mailchimp_Error('You must provide a MailChimp API key');
         $this->apikey = $apikey;
