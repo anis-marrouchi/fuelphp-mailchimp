@@ -18,7 +18,7 @@ Installing the package
 1. Clone (`git clone git://github.com/anis-marrouchi/fuelphp-mailchimp`) / [download](https://github.com/anis-marrouchi/fuelphp-mailchimp/archive/master.zip)
 2. Rename folder to mailchimp and place in `fuel/packages/`
 
-Cofiguration
+Configuration
 ==================================
 1. Edit `fuel/packages/mailchimp/config/mailchimp.php` by adding your Mailchimp api
 2. Add 'mailchimp' to the `'always_load/packages'` array in `app/config/config.php`. You can also call Fuel::add_package('mailchimp') whenever you need it).
